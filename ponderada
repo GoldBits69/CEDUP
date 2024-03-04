@@ -1,0 +1,26 @@
+import java.util.Scanner;
+import java.text.DecimalFormat;
+
+public class ponderada {
+  public static void main(String[] args) {
+    Scanner escaner = new Scanner(System.in);
+    DecimalFormat decimal = new DecimalFormat("0.00"); 
+    System.out.print("Informe a primeira nota: ");
+    double nota1 = escaner.nextDouble();
+    System.out.print("Qual seu peso? ");
+    double peso1 = escaner.nextDouble();
+    double pond1 = (nota1 * 10) / peso1;
+    System.out.print("Informe a segunda nota: ");
+    double nota2 = escaner.nextDouble();
+    System.out.print("Qual seu peso? ");
+    double peso2 = escaner.nextDouble();
+    double pond2 = (nota2 * 10) / peso2;
+    System.out.print("Informe a terceira nota: ");
+    double nota3 = escaner.nextDouble();
+    System.out.print("Qual seu peso? ");
+    double peso3 = escaner.nextDouble();
+    double pond3 = (nota3 * 10) / peso3;
+    double media = (pond1 + pond2 + pond3) / 3;
+    System.out.print("Sua média é de " + decimal.format(media) + ". ");
+    }
+  }
