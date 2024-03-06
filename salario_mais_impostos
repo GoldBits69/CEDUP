@@ -7,7 +7,7 @@ public class salario_mais_impostos {
     System.out.println("Qual seu salário? ");
     double salaro = escaner.nextDouble();
     double gratificacao = salaro * 0.05;
-    double imposto = (salaro + gratificacao) * 0.07;
+    double imposto = salaro * 0.07;
     double salaro_deduzido = salaro + gratificacao - imposto;
     System.out.println("Seu salário, junto com gratificações e impostos, será de R$" + salaro_deduzido);
     }
