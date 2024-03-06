@@ -1,0 +1,12 @@
+import java.util.Scanner;
+import java.text.DecimalFormat;
+
+public class salario_aumento {
+    static Scanner escaner = new Scanner(System.in);
+    public static void main(String[] args) {
+        System.out.println("Qual seu salário?");
+        double salaro = escaner.nextDouble();
+        double novosalaro = salaro * 1.25;
+        System.out.println("Seu salário com o aumento será R$" + novosalaro);
+    }
+}
