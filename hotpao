@@ -1,0 +1,23 @@
+/*  3. A padaria Hotpão vende uma certa quantidade de pães franceses e uma quantidade de broas a cada
+dia. Cada pãozinho custa R$ 0,12 e a broa custa R$ 1,50. Ao final do dia, o dono quer saber quanto
+arrecadou com a venda dos pães e broas (juntos), e quanto' deve guardar numa conta de poupança
+(10% do total arrecadado). Você foi contratado para fazer os cálculos para o dono. Com base nestes
+fatos, faça um programa para ler as quantidades de pães e de broas, e depois calcular os dados
+solicitados.*/
+import java.util.Scanner;
+
+public class hotpao {
+    public static void main(String[] args) {
+        Scanner escaner = new Scanner(System.in);
+        System.out.println("Quantos pães foram vendidos? ");
+        int qtd_pao = escaner.nextInt();
+        double lucro_pao = qtd_pao * 0.12;
+        System.out.println("Quantas broas foram vendidas? ");
+        int qtd_broa = escaner.nextInt();
+        double lucro_broa = qtd_broa * 1.50;
+        double lucro_total = lucro_broa + lucro_pao;
+        System.out.println("Seu lucro no dia foi de R$" + lucro_total + ".");
+        System.out.println("O valor que irá para a poupança será de R$" + lucro_total*0.1 + ".");
+
+    }
+}
