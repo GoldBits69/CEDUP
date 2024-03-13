@@ -1,13 +1,1 @@
-import java.util.Scanner;
 
-public class area_retangulo {
-    public static void main(String[] args) {
-        Scanner escaner = new Scanner(System.in);
-        System.out.println("Qual a largura do retângulo?");
-        double largura = escaner.nextDouble();
-        System.out.println("Qual a altura do retângulo?");
-        double altura = escaner.nextDouble();
-        double area = largura * altura;
-        System.out.println("A área do retângulo é de " + area + "x²");
-    }
-}
