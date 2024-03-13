@@ -1,0 +1,6 @@
+create database gold;
+create table paciente( id_paciente int not null primary key, nome varchar(50), sexo char(1));
+create table medico( id_medico int not null primary key, crm varchar(50), data_admissao date);
+create table consulta( id_consulta int not null primary key, data_consulta date, valor float(10));
+alter table paciente add column estado_civil char(1);
+alter table paciente;
