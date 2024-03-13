@@ -3,4 +3,6 @@ create table paciente( id_paciente int not null primary key, nome varchar(50), s
 create table medico( id_medico int not null primary key, crm varchar(50), data_admissao date);
 create table consulta( id_consulta int not null primary key, data_consulta date, valor float(10));
 alter table paciente add column estado_civil char(1);
-alter table paciente;
+alter table consulta add column observacao varchar(100);
+alter table paciente drop sexo;
+drop table consulta;
